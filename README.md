@@ -1,5 +1,19 @@
-Climbing Stairs
+    Содержание
 
+    Climbing Stairs
+
+    Jump Game II
+
+    Pascal's Triangle II
+
+    Best Time to Buy and Sell Stock
+
+    Best Time to Buy and Sell Stock II
+
+    Теория
+
+Climbing Stairs
+```python
 class Solution:
     def climbStairs(self, n: int) -> int:
         memo = {1:1, 2:2}
@@ -10,6 +24,7 @@ class Solution:
                 memo[n] = f(n-2) + f(n-1)
             return memo[n]
         return f(n)
+```
 
 Методология решения задачи Climbing Stairs
 
@@ -72,7 +87,7 @@ class Solution:
 
 
 Jump Game II
-
+```python
 class Solution:
 	def jump(self, nums: List[int]) -> int:
 		smallest = 0
@@ -84,7 +99,7 @@ class Solution:
 				smallest += 1
 				end = far
 		return smallest
-
+```
 Методология решения задачи Jump Game II
 
 Оптимальное решение с жадным подходом (Greedy Algorithm)
@@ -135,7 +150,7 @@ class Solution:
 Жадный подход использует тот факт, что для минимизации количества прыжков мы всегда должны прыгать на максимально возможное расстояние в пределах текущей досягаемости. Это преобразует задачу в линейное сканирование и исключает экспоненциальное ветвление методов полного перебора.
 
 Pascal's Triangle II
-
+```python
 class Solution:
     def getRow(self, rowIndex: int) -> list[int]:
         row = [1] * (rowIndex + 1)
@@ -146,7 +161,7 @@ class Solution:
         
         return row
     
-
+```
 Методология решения задачи Pascal's Triangle II
 
 Оптимальное решение с комбинаторным подходом (Combinatorial Algorithm)
@@ -195,7 +210,7 @@ class Solution:
 Best Time to Buy and Sell Stock
 
 from typing import List
-
+```python
 class Solution:
     def maxProfit(self, prices: List[int]) -> int:
         min_price = float('inf')
@@ -208,7 +223,7 @@ class Solution:
             max_profit = max(profit, max_profit)
                 
         return max_profit
-
+```
 Методология решения задачи Best Time to Buy and Sell Stock
 
 Оптимальное решение с линейным сканированием (One-Pass Algorithm)
@@ -262,7 +277,7 @@ class Solution:
 
 Best Time to Buy and Sell Stock II
 
-
+```python
 class Solution:
     def maxProfit(self, prices: List[int]) -> int:
         i = 0
@@ -285,6 +300,7 @@ class Solution:
             profit += hi - lo
         
         return profit 
+```
 
 Методология решения задачи Best Time to Buy and Sell Stock II
 
