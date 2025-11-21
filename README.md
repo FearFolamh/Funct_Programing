@@ -1,16 +1,3 @@
-    Содержание
-
-    Climbing Stairs
-
-    Jump Game II
-
-    Pascal's Triangle II
-
-    Best Time to Buy and Sell Stock
-
-    Best Time to Buy and Sell Stock II
-
-    Теория
 
 Climbing Stairs
 ```python
