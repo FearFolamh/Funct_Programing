@@ -1,3 +1,6 @@
+from typing import List
+
+
 class Solution:
 	def jump(self, nums: List[int]) -> int:
 		smallest = 0
@@ -9,3 +12,4 @@ class Solution:
 				smallest += 1
 				end = far
 		return smallest
+
